@@ -1,1 +1,1 @@
-console.log('Olá, Mundo!');
+const a = 2;
