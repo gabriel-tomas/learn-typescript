@@ -7,7 +7,8 @@ const objectA: {
   keyB: 'Value B',
 };
 
-objectA.keyA = 'Value A modified';
 objectA.keyC = 5;
 
 console.log(objectA);
+
+export default 0;
