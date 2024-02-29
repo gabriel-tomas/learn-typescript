@@ -1,13 +1,16 @@
-type TipoPessoa = {
+interface TipoPessoa {
   nome: string;
   sobrenome: string;
-};
+}
 
-type TipoInfoPessoa = {
-  nomeCompleto(): void;
-};
+interface TipoInfoPessoa {
+  nomeCompleto(): string;
+}
 
-export class Pessoa implements TipoPessoa, TipoInfoPessoa {
+type TipoPessoaAll = TipoPessoa & TipoInfoPessoa;
+interface TipoPessoaAll2 extends TipoPessoa, TipoInfoPessoa {}
+
+export class Pessoa implements TipoPessoaAll2 {
   constructor(
     public nome: string,
     public sobrenome: string,
