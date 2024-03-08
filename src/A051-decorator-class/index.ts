@@ -15,7 +15,7 @@ function decoratorPessoa<T extends new (...args: any[]) => any>(target: T) {
     }
 
     getNomeCompleto(): string {
-      return this.completeName;
+      return this._completeName;
     }
   };
 }
