@@ -20,3 +20,5 @@ const pessoa1: Pessoa = {
   enderecos: ['Rua 1'],
   idade: 31,
 };
+
+export default 0;
